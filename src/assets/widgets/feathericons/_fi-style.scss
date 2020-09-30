@@ -1,0 +1,1484 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tfwb6t');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tfwb6t#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tfwb6t') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tfwb6t') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tfwb6t##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fi-"], [class*=" fi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-timeline {
+  &:before {
+    content: $fi-timeline;
+  }
+}
+.fi-storyline {
+  &:before {
+    content: $fi-storyline;
+  }
+}
+.fi-story-plus {
+  &:before {
+    content: $fi-story-plus;
+  }
+}
+.fi-stories-text {
+  &:before {
+    content: $fi-stories-text;
+  }
+}
+.fi-stories-media-2 {
+  &:before {
+    content: $fi-stories-media-2;
+  }
+}
+.fi-stories-text-2 {
+  &:before {
+    content: $fi-stories-text-2;
+  }
+}
+.fi-stories-media {
+  &:before {
+    content: $fi-stories-media;
+  }
+}
+.fi-story-text {
+  &:before {
+    content: $fi-story-text;
+  }
+}
+.fi-story-media {
+  &:before {
+    content: $fi-story-media;
+  }
+}
+.fi-gong-full {
+  &:before {
+    content: $fi-gong-full;
+  }
+}
+.fi-gong-square {
+  &:before {
+    content: $fi-gong-square;
+  }
+}
+.fi-activity {
+  &:before {
+    content: $fi-activity;
+  }
+}
+.fi-airplay {
+  &:before {
+    content: $fi-airplay;
+  }
+}
+.fi-alert-circle {
+  &:before {
+    content: $fi-alert-circle;
+  }
+}
+.fi-alert-octagon {
+  &:before {
+    content: $fi-alert-octagon;
+  }
+}
+.fi-alert-triangle {
+  &:before {
+    content: $fi-alert-triangle;
+  }
+}
+.fi-align-center {
+  &:before {
+    content: $fi-align-center;
+  }
+}
+.fi-align-justify {
+  &:before {
+    content: $fi-align-justify;
+  }
+}
+.fi-align-left {
+  &:before {
+    content: $fi-align-left;
+  }
+}
+.fi-align-right {
+  &:before {
+    content: $fi-align-right;
+  }
+}
+.fi-anchor {
+  &:before {
+    content: $fi-anchor;
+  }
+}
+.fi-aperture {
+  &:before {
+    content: $fi-aperture;
+  }
+}
+.fi-archive {
+  &:before {
+    content: $fi-archive;
+  }
+}
+.fi-arrow-down-circle {
+  &:before {
+    content: $fi-arrow-down-circle;
+  }
+}
+.fi-arrow-down-left {
+  &:before {
+    content: $fi-arrow-down-left;
+  }
+}
+.fi-arrow-down-right {
+  &:before {
+    content: $fi-arrow-down-right;
+  }
+}
+.fi-arrow-down {
+  &:before {
+    content: $fi-arrow-down;
+  }
+}
+.fi-arrow-left-circle {
+  &:before {
+    content: $fi-arrow-left-circle;
+  }
+}
+.fi-arrow-left {
+  &:before {
+    content: $fi-arrow-left;
+  }
+}
+.fi-arrow-right-circle {
+  &:before {
+    content: $fi-arrow-right-circle;
+  }
+}
+.fi-arrow-right {
+  &:before {
+    content: $fi-arrow-right;
+  }
+}
+.fi-arrow-up-circle {
+  &:before {
+    content: $fi-arrow-up-circle;
+  }
+}
+.fi-arrow-up-left {
+  &:before {
+    content: $fi-arrow-up-left;
+  }
+}
+.fi-arrow-up-right {
+  &:before {
+    content: $fi-arrow-up-right;
+  }
+}
+.fi-arrow-up {
+  &:before {
+    content: $fi-arrow-up;
+  }
+}
+.fi-at-sign {
+  &:before {
+    content: $fi-at-sign;
+  }
+}
+.fi-award {
+  &:before {
+    content: $fi-award;
+  }
+}
+.fi-bar-chart-2 {
+  &:before {
+    content: $fi-bar-chart-2;
+  }
+}
+.fi-bar-chart {
+  &:before {
+    content: $fi-bar-chart;
+  }
+}
+.fi-battery-charging {
+  &:before {
+    content: $fi-battery-charging;
+  }
+}
+.fi-battery {
+  &:before {
+    content: $fi-battery;
+  }
+}
+.fi-bell-off {
+  &:before {
+    content: $fi-bell-off;
+  }
+}
+.fi-bell {
+  &:before {
+    content: $fi-bell;
+  }
+}
+.fi-bluetooth {
+  &:before {
+    content: $fi-bluetooth;
+  }
+}
+.fi-bold {
+  &:before {
+    content: $fi-bold;
+  }
+}
+.fi-book-open {
+  &:before {
+    content: $fi-book-open;
+  }
+}
+.fi-book {
+  &:before {
+    content: $fi-book;
+  }
+}
+.fi-bookmark {
+  &:before {
+    content: $fi-bookmark;
+  }
+}
+.fi-box {
+  &:before {
+    content: $fi-box;
+  }
+}
+.fi-briefcase {
+  &:before {
+    content: $fi-briefcase;
+  }
+}
+.fi-calendar {
+  &:before {
+    content: $fi-calendar;
+  }
+}
+.fi-camera-off {
+  &:before {
+    content: $fi-camera-off;
+  }
+}
+.fi-camera {
+  &:before {
+    content: $fi-camera;
+  }
+}
+.fi-cast {
+  &:before {
+    content: $fi-cast;
+  }
+}
+.fi-check-circle {
+  &:before {
+    content: $fi-check-circle;
+  }
+}
+.fi-check-square {
+  &:before {
+    content: $fi-check-square;
+  }
+}
+.fi-check {
+  &:before {
+    content: $fi-check;
+  }
+}
+.fi-chevron-down {
+  &:before {
+    content: $fi-chevron-down;
+  }
+}
+.fi-chevron-left {
+  &:before {
+    content: $fi-chevron-left;
+  }
+}
+.fi-chevron-right {
+  &:before {
+    content: $fi-chevron-right;
+  }
+}
+.fi-chevron-up {
+  &:before {
+    content: $fi-chevron-up;
+  }
+}
+.fi-chevrons-down {
+  &:before {
+    content: $fi-chevrons-down;
+  }
+}
+.fi-chevrons-left {
+  &:before {
+    content: $fi-chevrons-left;
+  }
+}
+.fi-chevrons-right {
+  &:before {
+    content: $fi-chevrons-right;
+  }
+}
+.fi-chevrons-up {
+  &:before {
+    content: $fi-chevrons-up;
+  }
+}
+.fi-chrome {
+  &:before {
+    content: $fi-chrome;
+  }
+}
+.fi-circle {
+  &:before {
+    content: $fi-circle;
+  }
+}
+.fi-clipboard {
+  &:before {
+    content: $fi-clipboard;
+  }
+}
+.fi-clock {
+  &:before {
+    content: $fi-clock;
+  }
+}
+.fi-cloud-drizzle {
+  &:before {
+    content: $fi-cloud-drizzle;
+  }
+}
+.fi-cloud-lightning {
+  &:before {
+    content: $fi-cloud-lightning;
+  }
+}
+.fi-cloud-off {
+  &:before {
+    content: $fi-cloud-off;
+  }
+}
+.fi-cloud-rain {
+  &:before {
+    content: $fi-cloud-rain;
+  }
+}
+.fi-cloud-snow {
+  &:before {
+    content: $fi-cloud-snow;
+  }
+}
+.fi-cloud {
+  &:before {
+    content: $fi-cloud;
+  }
+}
+.fi-code {
+  &:before {
+    content: $fi-code;
+  }
+}
+.fi-codepen {
+  &:before {
+    content: $fi-codepen;
+  }
+}
+.fi-codesandbox {
+  &:before {
+    content: $fi-codesandbox;
+  }
+}
+.fi-coffee {
+  &:before {
+    content: $fi-coffee;
+  }
+}
+.fi-columns {
+  &:before {
+    content: $fi-columns;
+  }
+}
+.fi-command {
+  &:before {
+    content: $fi-command;
+  }
+}
+.fi-compass {
+  &:before {
+    content: $fi-compass;
+  }
+}
+.fi-copy {
+  &:before {
+    content: $fi-copy;
+  }
+}
+.fi-corner-down-left {
+  &:before {
+    content: $fi-corner-down-left;
+  }
+}
+.fi-corner-down-right {
+  &:before {
+    content: $fi-corner-down-right;
+  }
+}
+.fi-corner-left-down {
+  &:before {
+    content: $fi-corner-left-down;
+  }
+}
+.fi-corner-left-up {
+  &:before {
+    content: $fi-corner-left-up;
+  }
+}
+.fi-corner-right-down {
+  &:before {
+    content: $fi-corner-right-down;
+  }
+}
+.fi-corner-right-up {
+  &:before {
+    content: $fi-corner-right-up;
+  }
+}
+.fi-corner-up-left {
+  &:before {
+    content: $fi-corner-up-left;
+  }
+}
+.fi-corner-up-right {
+  &:before {
+    content: $fi-corner-up-right;
+  }
+}
+.fi-cpu {
+  &:before {
+    content: $fi-cpu;
+  }
+}
+.fi-credit-card {
+  &:before {
+    content: $fi-credit-card;
+  }
+}
+.fi-crop {
+  &:before {
+    content: $fi-crop;
+  }
+}
+.fi-crosshair {
+  &:before {
+    content: $fi-crosshair;
+  }
+}
+.fi-database {
+  &:before {
+    content: $fi-database;
+  }
+}
+.fi-delete {
+  &:before {
+    content: $fi-delete;
+  }
+}
+.fi-disc {
+  &:before {
+    content: $fi-disc;
+  }
+}
+.fi-dollar-sign {
+  &:before {
+    content: $fi-dollar-sign;
+  }
+}
+.fi-download-cloud {
+  &:before {
+    content: $fi-download-cloud;
+  }
+}
+.fi-download {
+  &:before {
+    content: $fi-download;
+  }
+}
+.fi-droplet {
+  &:before {
+    content: $fi-droplet;
+  }
+}
+.fi-edit-2 {
+  &:before {
+    content: $fi-edit-2;
+  }
+}
+.fi-edit-3 {
+  &:before {
+    content: $fi-edit-3;
+  }
+}
+.fi-edit {
+  &:before {
+    content: $fi-edit;
+  }
+}
+.fi-external-link {
+  &:before {
+    content: $fi-external-link;
+  }
+}
+.fi-eye-off {
+  &:before {
+    content: $fi-eye-off;
+  }
+}
+.fi-eye {
+  &:before {
+    content: $fi-eye;
+  }
+}
+.fi-facebook {
+  &:before {
+    content: $fi-facebook;
+  }
+}
+.fi-fast-forward {
+  &:before {
+    content: $fi-fast-forward;
+  }
+}
+.fi-feather {
+  &:before {
+    content: $fi-feather;
+  }
+}
+.fi-figma {
+  &:before {
+    content: $fi-figma;
+  }
+}
+.fi-file-minus {
+  &:before {
+    content: $fi-file-minus;
+  }
+}
+.fi-file-plus {
+  &:before {
+    content: $fi-file-plus;
+  }
+}
+.fi-file-text {
+  &:before {
+    content: $fi-file-text;
+  }
+}
+.fi-file {
+  &:before {
+    content: $fi-file;
+  }
+}
+.fi-film {
+  &:before {
+    content: $fi-film;
+  }
+}
+.fi-filter {
+  &:before {
+    content: $fi-filter;
+  }
+}
+.fi-flag {
+  &:before {
+    content: $fi-flag;
+  }
+}
+.fi-folder-minus {
+  &:before {
+    content: $fi-folder-minus;
+  }
+}
+.fi-folder-plus {
+  &:before {
+    content: $fi-folder-plus;
+  }
+}
+.fi-folder {
+  &:before {
+    content: $fi-folder;
+  }
+}
+.fi-framer {
+  &:before {
+    content: $fi-framer;
+  }
+}
+.fi-frown {
+  &:before {
+    content: $fi-frown;
+  }
+}
+.fi-gift {
+  &:before {
+    content: $fi-gift;
+  }
+}
+.fi-git-branch {
+  &:before {
+    content: $fi-git-branch;
+  }
+}
+.fi-git-commit {
+  &:before {
+    content: $fi-git-commit;
+  }
+}
+.fi-git-merge {
+  &:before {
+    content: $fi-git-merge;
+  }
+}
+.fi-git-pull-request {
+  &:before {
+    content: $fi-git-pull-request;
+  }
+}
+.fi-github {
+  &:before {
+    content: $fi-github;
+  }
+}
+.fi-gitlab {
+  &:before {
+    content: $fi-gitlab;
+  }
+}
+.fi-globe {
+  &:before {
+    content: $fi-globe;
+  }
+}
+.fi-grid {
+  &:before {
+    content: $fi-grid;
+  }
+}
+.fi-hard-drive {
+  &:before {
+    content: $fi-hard-drive;
+  }
+}
+.fi-hash {
+  &:before {
+    content: $fi-hash;
+  }
+}
+.fi-headphones {
+  &:before {
+    content: $fi-headphones;
+  }
+}
+.fi-heart {
+  &:before {
+    content: $fi-heart;
+  }
+}
+.fi-help-circle {
+  &:before {
+    content: $fi-help-circle;
+  }
+}
+.fi-hexagon {
+  &:before {
+    content: $fi-hexagon;
+  }
+}
+.fi-home {
+  &:before {
+    content: $fi-home;
+  }
+}
+.fi-image {
+  &:before {
+    content: $fi-image;
+  }
+}
+.fi-inbox {
+  &:before {
+    content: $fi-inbox;
+  }
+}
+.fi-info {
+  &:before {
+    content: $fi-info;
+  }
+}
+.fi-instagram {
+  &:before {
+    content: $fi-instagram;
+  }
+}
+.fi-italic {
+  &:before {
+    content: $fi-italic;
+  }
+}
+.fi-key {
+  &:before {
+    content: $fi-key;
+  }
+}
+.fi-layers {
+  &:before {
+    content: $fi-layers;
+  }
+}
+.fi-layout {
+  &:before {
+    content: $fi-layout;
+  }
+}
+.fi-life-buoy {
+  &:before {
+    content: $fi-life-buoy;
+  }
+}
+.fi-link-2 {
+  &:before {
+    content: $fi-link-2;
+  }
+}
+.fi-link {
+  &:before {
+    content: $fi-link;
+  }
+}
+.fi-linkedin {
+  &:before {
+    content: $fi-linkedin;
+  }
+}
+.fi-list {
+  &:before {
+    content: $fi-list;
+  }
+}
+.fi-loader {
+  &:before {
+    content: $fi-loader;
+  }
+}
+.fi-lock {
+  &:before {
+    content: $fi-lock;
+  }
+}
+.fi-log-in {
+  &:before {
+    content: $fi-log-in;
+  }
+}
+.fi-log-out {
+  &:before {
+    content: $fi-log-out;
+  }
+}
+.fi-mail {
+  &:before {
+    content: $fi-mail;
+  }
+}
+.fi-map-pin {
+  &:before {
+    content: $fi-map-pin;
+  }
+}
+.fi-map {
+  &:before {
+    content: $fi-map;
+  }
+}
+.fi-maximize-2 {
+  &:before {
+    content: $fi-maximize-2;
+  }
+}
+.fi-maximize {
+  &:before {
+    content: $fi-maximize;
+  }
+}
+.fi-meh {
+  &:before {
+    content: $fi-meh;
+  }
+}
+.fi-menu {
+  &:before {
+    content: $fi-menu;
+  }
+}
+.fi-message-circle {
+  &:before {
+    content: $fi-message-circle;
+  }
+}
+.fi-message-square {
+  &:before {
+    content: $fi-message-square;
+  }
+}
+.fi-mic-off {
+  &:before {
+    content: $fi-mic-off;
+  }
+}
+.fi-mic {
+  &:before {
+    content: $fi-mic;
+  }
+}
+.fi-minimize-2 {
+  &:before {
+    content: $fi-minimize-2;
+  }
+}
+.fi-minimize {
+  &:before {
+    content: $fi-minimize;
+  }
+}
+.fi-minus-circle {
+  &:before {
+    content: $fi-minus-circle;
+  }
+}
+.fi-minus-square {
+  &:before {
+    content: $fi-minus-square;
+  }
+}
+.fi-minus {
+  &:before {
+    content: $fi-minus;
+  }
+}
+.fi-monitor {
+  &:before {
+    content: $fi-monitor;
+  }
+}
+.fi-moon {
+  &:before {
+    content: $fi-moon;
+  }
+}
+.fi-more-horizontal {
+  &:before {
+    content: $fi-more-horizontal;
+  }
+}
+.fi-more-vertical {
+  &:before {
+    content: $fi-more-vertical;
+  }
+}
+.fi-mouse-pointer {
+  &:before {
+    content: $fi-mouse-pointer;
+  }
+}
+.fi-move {
+  &:before {
+    content: $fi-move;
+  }
+}
+.fi-music {
+  &:before {
+    content: $fi-music;
+  }
+}
+.fi-navigation-2 {
+  &:before {
+    content: $fi-navigation-2;
+  }
+}
+.fi-navigation {
+  &:before {
+    content: $fi-navigation;
+  }
+}
+.fi-octagon {
+  &:before {
+    content: $fi-octagon;
+  }
+}
+.fi-package {
+  &:before {
+    content: $fi-package;
+  }
+}
+.fi-paperclip {
+  &:before {
+    content: $fi-paperclip;
+  }
+}
+.fi-pause-circle {
+  &:before {
+    content: $fi-pause-circle;
+  }
+}
+.fi-pause {
+  &:before {
+    content: $fi-pause;
+  }
+}
+.fi-pen-tool {
+  &:before {
+    content: $fi-pen-tool;
+  }
+}
+.fi-percent {
+  &:before {
+    content: $fi-percent;
+  }
+}
+.fi-phone-call {
+  &:before {
+    content: $fi-phone-call;
+  }
+}
+.fi-phone-forwarded {
+  &:before {
+    content: $fi-phone-forwarded;
+  }
+}
+.fi-phone-incoming {
+  &:before {
+    content: $fi-phone-incoming;
+  }
+}
+.fi-phone-missed {
+  &:before {
+    content: $fi-phone-missed;
+  }
+}
+.fi-phone-off {
+  &:before {
+    content: $fi-phone-off;
+  }
+}
+.fi-phone-outgoing {
+  &:before {
+    content: $fi-phone-outgoing;
+  }
+}
+.fi-phone {
+  &:before {
+    content: $fi-phone;
+  }
+}
+.fi-pie-chart {
+  &:before {
+    content: $fi-pie-chart;
+  }
+}
+.fi-play-circle {
+  &:before {
+    content: $fi-play-circle;
+  }
+}
+.fi-play {
+  &:before {
+    content: $fi-play;
+  }
+}
+.fi-plus-circle {
+  &:before {
+    content: $fi-plus-circle;
+  }
+}
+.fi-plus-square {
+  &:before {
+    content: $fi-plus-square;
+  }
+}
+.fi-plus {
+  &:before {
+    content: $fi-plus;
+  }
+}
+.fi-pocket {
+  &:before {
+    content: $fi-pocket;
+  }
+}
+.fi-power {
+  &:before {
+    content: $fi-power;
+  }
+}
+.fi-printer {
+  &:before {
+    content: $fi-printer;
+  }
+}
+.fi-radio {
+  &:before {
+    content: $fi-radio;
+  }
+}
+.fi-refresh-ccw {
+  &:before {
+    content: $fi-refresh-ccw;
+  }
+}
+.fi-refresh-cw {
+  &:before {
+    content: $fi-refresh-cw;
+  }
+}
+.fi-repeat {
+  &:before {
+    content: $fi-repeat;
+  }
+}
+.fi-rewind {
+  &:before {
+    content: $fi-rewind;
+  }
+}
+.fi-rotate-ccw {
+  &:before {
+    content: $fi-rotate-ccw;
+  }
+}
+.fi-rotate-cw {
+  &:before {
+    content: $fi-rotate-cw;
+  }
+}
+.fi-rss {
+  &:before {
+    content: $fi-rss;
+  }
+}
+.fi-save {
+  &:before {
+    content: $fi-save;
+  }
+}
+.fi-scissors {
+  &:before {
+    content: $fi-scissors;
+  }
+}
+.fi-search {
+  &:before {
+    content: $fi-search;
+  }
+}
+.fi-send {
+  &:before {
+    content: $fi-send;
+  }
+}
+.fi-server {
+  &:before {
+    content: $fi-server;
+  }
+}
+.fi-settings {
+  &:before {
+    content: $fi-settings;
+  }
+}
+.fi-share-2 {
+  &:before {
+    content: $fi-share-2;
+  }
+}
+.fi-share {
+  &:before {
+    content: $fi-share;
+  }
+}
+.fi-shield-off {
+  &:before {
+    content: $fi-shield-off;
+  }
+}
+.fi-shield {
+  &:before {
+    content: $fi-shield;
+  }
+}
+.fi-shopping-bag {
+  &:before {
+    content: $fi-shopping-bag;
+  }
+}
+.fi-shopping-cart {
+  &:before {
+    content: $fi-shopping-cart;
+  }
+}
+.fi-shuffle {
+  &:before {
+    content: $fi-shuffle;
+  }
+}
+.fi-sidebar {
+  &:before {
+    content: $fi-sidebar;
+  }
+}
+.fi-skip-back {
+  &:before {
+    content: $fi-skip-back;
+  }
+}
+.fi-skip-forward {
+  &:before {
+    content: $fi-skip-forward;
+  }
+}
+.fi-slack {
+  &:before {
+    content: $fi-slack;
+  }
+}
+.fi-slash {
+  &:before {
+    content: $fi-slash;
+  }
+}
+.fi-sliders {
+  &:before {
+    content: $fi-sliders;
+  }
+}
+.fi-smartphone {
+  &:before {
+    content: $fi-smartphone;
+  }
+}
+.fi-smile {
+  &:before {
+    content: $fi-smile;
+  }
+}
+.fi-speaker {
+  &:before {
+    content: $fi-speaker;
+  }
+}
+.fi-square {
+  &:before {
+    content: $fi-square;
+  }
+}
+.fi-star {
+  &:before {
+    content: $fi-star;
+  }
+}
+.fi-stop-circle {
+  &:before {
+    content: $fi-stop-circle;
+  }
+}
+.fi-sun {
+  &:before {
+    content: $fi-sun;
+  }
+}
+.fi-sunrise {
+  &:before {
+    content: $fi-sunrise;
+  }
+}
+.fi-sunset {
+  &:before {
+    content: $fi-sunset;
+  }
+}
+.fi-tablet {
+  &:before {
+    content: $fi-tablet;
+  }
+}
+.fi-tag {
+  &:before {
+    content: $fi-tag;
+  }
+}
+.fi-target {
+  &:before {
+    content: $fi-target;
+  }
+}
+.fi-terminal {
+  &:before {
+    content: $fi-terminal;
+  }
+}
+.fi-thermometer {
+  &:before {
+    content: $fi-thermometer;
+  }
+}
+.fi-thumbs-down {
+  &:before {
+    content: $fi-thumbs-down;
+  }
+}
+.fi-thumbs-up {
+  &:before {
+    content: $fi-thumbs-up;
+  }
+}
+.fi-toggle-left {
+  &:before {
+    content: $fi-toggle-left;
+  }
+}
+.fi-toggle-right {
+  &:before {
+    content: $fi-toggle-right;
+  }
+}
+.fi-trash-2 {
+  &:before {
+    content: $fi-trash-2;
+  }
+}
+.fi-trash {
+  &:before {
+    content: $fi-trash;
+  }
+}
+.fi-trello {
+  &:before {
+    content: $fi-trello;
+  }
+}
+.fi-trending-down {
+  &:before {
+    content: $fi-trending-down;
+  }
+}
+.fi-trending-up {
+  &:before {
+    content: $fi-trending-up;
+  }
+}
+.fi-triangle {
+  &:before {
+    content: $fi-triangle;
+  }
+}
+.fi-truck {
+  &:before {
+    content: $fi-truck;
+  }
+}
+.fi-tv {
+  &:before {
+    content: $fi-tv;
+  }
+}
+.fi-twitter {
+  &:before {
+    content: $fi-twitter;
+  }
+}
+.fi-type {
+  &:before {
+    content: $fi-type;
+  }
+}
+.fi-umbrella {
+  &:before {
+    content: $fi-umbrella;
+  }
+}
+.fi-underline {
+  &:before {
+    content: $fi-underline;
+  }
+}
+.fi-unlock {
+  &:before {
+    content: $fi-unlock;
+  }
+}
+.fi-upload-cloud {
+  &:before {
+    content: $fi-upload-cloud;
+  }
+}
+.fi-upload {
+  &:before {
+    content: $fi-upload;
+  }
+}
+.fi-user-check {
+  &:before {
+    content: $fi-user-check;
+  }
+}
+.fi-user-minus {
+  &:before {
+    content: $fi-user-minus;
+  }
+}
+.fi-user-plus {
+  &:before {
+    content: $fi-user-plus;
+  }
+}
+.fi-user-x {
+  &:before {
+    content: $fi-user-x;
+  }
+}
+.fi-user {
+  &:before {
+    content: $fi-user;
+  }
+}
+.fi-users {
+  &:before {
+    content: $fi-users;
+  }
+}
+.fi-video-off {
+  &:before {
+    content: $fi-video-off;
+  }
+}
+.fi-video {
+  &:before {
+    content: $fi-video;
+  }
+}
+.fi-voicemail {
+  &:before {
+    content: $fi-voicemail;
+  }
+}
+.fi-volume-1 {
+  &:before {
+    content: $fi-volume-1;
+  }
+}
+.fi-volume-2 {
+  &:before {
+    content: $fi-volume-2;
+  }
+}
+.fi-volume-x {
+  &:before {
+    content: $fi-volume-x;
+  }
+}
+.fi-volume {
+  &:before {
+    content: $fi-volume;
+  }
+}
+.fi-watch {
+  &:before {
+    content: $fi-watch;
+  }
+}
+.fi-wifi-off {
+  &:before {
+    content: $fi-wifi-off;
+  }
+}
+.fi-wifi {
+  &:before {
+    content: $fi-wifi;
+  }
+}
+.fi-wind {
+  &:before {
+    content: $fi-wind;
+  }
+}
+.fi-x-circle {
+  &:before {
+    content: $fi-x-circle;
+  }
+}
+.fi-x-octagon {
+  &:before {
+    content: $fi-x-octagon;
+  }
+}
+.fi-x-square {
+  &:before {
+    content: $fi-x-square;
+  }
+}
+.fi-x {
+  &:before {
+    content: $fi-x;
+  }
+}
+.fi-youtube {
+  &:before {
+    content: $fi-youtube;
+  }
+}
+.fi-zap-off {
+  &:before {
+    content: $fi-zap-off;
+  }
+}
+.fi-zap {
+  &:before {
+    content: $fi-zap;
+  }
+}
+.fi-zoom-in {
+  &:before {
+    content: $fi-zoom-in;
+  }
+}
+.fi-zoom-out {
+  &:before {
+    content: $fi-zoom-out;
+  }
+}

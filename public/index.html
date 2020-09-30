@@ -2,16 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta charset="ISO-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="black">
+    <meta name="apple-web-app-status-bar-style" content="black">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="application-name" content="Media App"/>
+    <meta name="author" content="Media App Author"/> <!--not more than first 20 words-->
+    <meta name="keywords" content="Keyword1, Keyword2"> <!--not more than first 20 words-->
+
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+
+
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700|PT+Serif:300,400,700|PT+Sans:400,400i,700,700i|Poppins:400,700"-->
+          <!--rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/txt8osa.css">
+    <link rel="stylesheet" href="src/assets/fonts/feathericons/feather-icons-style.css">
+    <!--[if lt IE 8]><!-->
+    <link rel="stylesheet" href="src/assets/fonts/feathericons/ie7/ie7.css">
+    <!--<![endif]-->
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="superChargeApp"></div>
     <!-- built files will be auto injected -->
   </body>
 </html>

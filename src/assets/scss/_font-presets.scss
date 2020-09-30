@@ -1,0 +1,24 @@
+
+$header: 'futura-pt', Poppins, sans-serif;
+$link: 'Karla', Montserrat, sans-serif;
+$text: 'Karla', sans-serif;
+
+$app-font-settings: (
+        'header': (
+                font-family: $header,
+        ),
+        'link': (
+                font-family: $link,
+        ),
+        'text': (
+                font-family: $text,
+        ),
+);
+
+@function app-font-family($for) {
+  @return map-get(map-get($app-font-settings, $for), 'font-family');
+}
+
+@mixin app-font-face($for) {
+  font-family: app-font-family($for);
+}
