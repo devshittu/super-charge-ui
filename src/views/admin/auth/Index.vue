@@ -1,74 +1,4 @@
 <template>
-    <!--<section class="hero is-black-passive is-fullheight ">
-        &lt;!&ndash; Hero head: will stick at the top &ndash;&gt;
-        <div class="hero-head">
-            <nav class="navbar is-transparent">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <div class=" logo-brand is-size-3">
-                            <h2 class=" has-text-weight-bold">TOPALAT</h2>
-                        </div>
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </span>
-                    </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                        &lt;!&ndash;<div class="navbar-start">
-                            <a class="navbar-item">
-                                How it Work?
-                            </a>
-                            <a class="navbar-item">
-                                Find Job
-                            </a>
-                            <a class="navbar-item">
-                                Login
-                            </a>
-                            <a class="navbar-item is-blue">
-                                Register
-                            </a>
-
-                        </div>&ndash;&gt;
-                        <div class="navbar-end">
-                            <router-link
-                                    :to="{ name: 'home'}" class="navbar-item">
-                                {{'Home' | capitalize}}
-                            </router-link>
-                            <router-link
-                                    :to="{ name: 'services'}" class="navbar-item">
-                                {{'Services' | capitalize}}
-                            </router-link>
-                            <router-link
-                                    :to="{ name: 'help'}" class="navbar-item">
-                                {{'FAQ' | capitalize}}
-                            </router-link>
-                            <router-link
-                                    :to="{ name: 'help'}" class="navbar-item">
-                                {{'Contact Us' | capitalize}}
-                            </router-link>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="hero-body">
-            <div class="container has-text-centered">
-
-                <h1 class="title is-1 pb-3 mb-6 ">{{pageTitle}}</h1>
-                <div class="content has-background-black-bisd">
-
-                    <router-view ref="AppMainContent">
-                    </router-view>
-                </div>
-
-            </div>
-        </div>
-
-        &lt;!&ndash; Hero footer: will stick at the bottom &ndash;&gt;
-        <AppFooter/>
-    </section>-->
     <section class="hero is-fullheight is-default is-bold">
         <div class="hero-head">
             <nav class="navbar">
@@ -96,25 +26,14 @@
                                         :to="{ name: 'home'}" class="navbar-item " :class="[currentPage.includes('') ? activeLinkClass: '', 'navbar-item']">
                                     {{'Home' | capitalize}}
                                 </router-link>
-                                <router-link
-                                        :to="{ name: 'services'}" :class="[currentPage.includes('services') ? activeLinkClass: '', 'navbar-item']">
-                                    {{'Services' | capitalize}}
-                                </router-link>
+
                                 <router-link
                                         :to="{ name: 'help'}" :class="[currentPage.includes('help') ? activeLinkClass: '', 'navbar-item']">
                                     {{'FAQ' | capitalize}}
                                 </router-link>
                                 <router-link
                                         :to="{ name: 'help'}" :class="[currentPage.includes('contact') ? activeLinkClass: '', 'navbar-item']">
-                                    {{'Contact Us' | capitalize}}
-                                </router-link>
-                                <router-link
-                                        :to="{ name: 'admin-dashboard'}" :class="[currentPage.includes('contact') ? activeLinkClass: '', 'navbar-item']">
-                                    {{'Control Panel' | capitalize}}
-                                </router-link>
-                                <router-link
-                                        :to="{ name: 'signin'}" :class="[currentPage.includes('contact') ? activeLinkClass: '', 'navbar-item']">
-                                    {{'Login' | capitalize}}
+                                    {{'log out' | capitalize}}
                                 </router-link>
                         </div>
                     </div>
@@ -123,7 +42,7 @@
             </nav>
         </div>
         <div class="hero-body">
-            <div class="container has-text-centered">
+            <div class="container has-text-centere">
                 <div class="columns is-vcentered is-centered">
                     <router-view ref="AppMainContent">
                     </router-view>
@@ -154,7 +73,7 @@
 </template>
 
 <script>
-    import AppFooter from "../components/AppViewComponent/AppFooter";
+    import AppFooter from "../../../components/AppViewComponent/AppFooter";
 
     export default {
         name: 'ServiceIndex',
@@ -181,8 +100,9 @@
 
         },
         computed: {
-            currentPage(){
-                return this.$route.path
+            currentPage:()=> {
+                return '';
+                //this.route.path
             }
         }
     }

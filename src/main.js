@@ -6,6 +6,7 @@ import router from './router/'
 
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+import './filters/';
 
 require('./assets/scss/main.scss');
 Vue.use(Buefy);

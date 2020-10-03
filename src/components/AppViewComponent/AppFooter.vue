@@ -1,9 +1,9 @@
 <template>
-    <div class="hero-foot">
+    <!--<div class="hero-foot">
         <div class="container">
             <div class=" columns">
                 <div class="column ">
-                    <!--<div  id="horz-list">-->
+                    &lt;!&ndash;<div  id="horz-list">&ndash;&gt;
                     <ul class="is-horizontal">
                         <li>
                             <router-link
@@ -23,9 +23,13 @@
                                 {{'FAQ' | capitalize}}
                             </router-link>
                         </li>
-                        <li><a>Contact Us</a></li>
+                        <li>
+                            <router-link
+                                    :to="{ name: 'help'}">
+                                {{'Contact Us' | capitalize}}
+                            </router-link></li>
                     </ul>
-                    <!--</div>-->
+                    &lt;!&ndash;</div>&ndash;&gt;
 
                 </div>
 
@@ -37,6 +41,22 @@
                 </div>
 
             </div>
+        </div>
+    </div>-->
+    <div class="hero-foot">
+        <div class="container has-text-right has-text-centered-mobile">
+            <p>
+                <strong> &copy; 2020 Super Charge </strong> designed and powered by <strong>Burbit
+                Technologies</strong>
+            </p>
+            <!--<div class="tabs is-centered">
+                <ul>
+                    <li><p>
+                        <strong> &copy; 2020 Super Charge </strong> designed and powered by <strong>Burbit
+                        Technologies</strong>
+                    </p></li>
+                </ul>
+            </div>-->
         </div>
     </div>
 </template>

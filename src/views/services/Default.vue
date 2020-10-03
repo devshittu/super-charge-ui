@@ -1,7 +1,7 @@
 
 <template>
     <div class="columns">
-        <div class="column is-three-fifths is-offset-one-fifth">
+        <div class="column is-three-fifths-desktop is-offset-one-fifth-desktop">
 
             <div class="columns  is-multiline is-variable is-9 ">
                 <div class="column is-half is-large">

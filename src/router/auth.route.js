@@ -1,25 +1,13 @@
 export default {
     // name: "auth",
     path: "/auth",
-    component: () => import("@/views/auth/Index"),
+    component: () => import("@/views/admin/auth/Index"),
     children: [
-        {
-            path: 'verify',
-            name: 'verify',
-            alias: '/verify',
-            component: () => import("@/views/auth/VerifyForm"),
-            props: (route) => ({email: route.query.email}),
-            meta: {
-                // requiresAuth: true,
-                title: 'Verify Account'
-            }
-        },
         {
             path: 'signin',
             name: 'signin',
-            // alias: '/signin',
             alias: '/signin',
-            component: () => import("@/views/auth/SigninForm"),
+            component: () => import("@/views/admin/auth/SigninForm"),
 
             meta: {
                 title: 'Signin'
@@ -27,43 +15,31 @@ export default {
             // component: () => import("@/views/auth/Index"),
         },
         {
-            path: 'signout',
-            name: 'signout',
-            // alias: '/signin',
-            alias: '/signout',
-            // component: signout(),
+            path: 'reset',
+            name: 'reset',
+            alias: '/reset',
+            component: () => import("@/views/admin/auth/ResetForm"),
 
-            component: () => import("@/views/auth/Index"),
             meta: {
-                title: 'Signout'
+                title: 'Reset'
             }
-        },
-        {
-            path: 'get-started',
-            name: 'get-started',
-            // alias: '/get-started',
-            alias: '/set-up',
-            component: () => import("@/views/auth/GetStarted"),
-            meta: {
-                requiresAuth: true,
-                title: 'Getting Started'
-            }
+            // component: () => import("@/views/auth/Index"),
         },
         {
             path: '/',
             redirect: '/auth/signin'
         },
-        /* {
-             path: "/",
-             name: "register",
-             component: () => import("@/views/auth/Register"),
-             /!*
+         {
+             path: "/signup",
+             name: "signup",
+             component: () => import("@/views/admin/auth/SignupForm"),
+             /*
              *   alias: key
              *   add slash if it could be used as root route.
              *   if you still want to respect the parent trail
              *   then remove the slash
-             *   *!/
+             *   */
              alias: '/register'
-         },*/
+         },
     ]
 }

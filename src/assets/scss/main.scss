@@ -1,15 +1,11 @@
 @charset "utf-8";
 @import "./variables";
-@import "~bulma/bulma";
 @import "./font-presets";
 @import "../widgets/feathericons/fi-style";
 
 body {
   @include app-font-face('text');
   font-weight: 200;
-  //display: flex;
-  //flex-direction: column;
-  //background-color: #f8fcfd;
 
   &::selection {
     background-color: black;
@@ -20,6 +16,18 @@ body {
     //color: #55cc65;
   }
 }
+
+body {
+  //min-height: 100rem;
+}
+.logo-brand {
+  color: $white;
+  background: $primary-color;
+  padding: 14px 10px 5px 10px;
+  border-radius: 0 0 7px 7px;
+  margin-top: -.5rem;
+}
+
 
 @for $i from 1 through 6 {
   h#{$i} {

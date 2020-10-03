@@ -1,8 +1,7 @@
 
 <template>
     <div class="content">
-        <h2>Frequently Asked Questions</h2>
-        <p>Only one accordion item's details will be displayed at a time.</p>
+
         <div class="columns">
             <div class="column">
                 <!--<h3>Single Active Item</h3>
