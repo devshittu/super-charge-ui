@@ -1,7 +1,7 @@
 <template>
     <div class="">
 
-        <PhoneNumberInputBox :beneficiary-phone-number="beneficiaryPhoneNumber" />
+        <PhoneNumberInputBox @getBeneficiaryPhoneNumber="updateBeneficiaryPhoneNumber" @getActiveCarrier="updateActiveCarrier" />
         <div class="container">
 
             <section>
@@ -9,43 +9,43 @@
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="50"
-                            :customer-value="50" duration="7" :merchant-price="48"
+                            customer-value="500mb" duration="7 days" :merchant-price="48"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="100"
-                            :customer-value="100" duration="7" :merchant-price="97"
+                            customer-value="1.5gb" duration="7 days" :merchant-price="97"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="200"
-                            :customer-value="200" duration="7" :merchant-price="194"
+                            customer-value="2gb" duration="7 days" :merchant-price="194"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="400"
-                            :customer-value="400" duration="7" :merchant-price="390"
+                            customer-value="3gb" duration="1 month" :merchant-price="390"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="500"
-                            :customer-value="500" duration="7" :merchant-price="485"
+                            customer-value="4.5gb" duration="1 month" :merchant-price="485"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="1000"
-                            :customer-value="1000" duration="7" :merchant-price="980"
+                            customer-value="6gb" duration="1 month" :merchant-price="980"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="2000"
-                            :customer-value="2000" duration="7" :merchant-price="1980"
+                            customer-value="10gb" duration="1 month" :merchant-price="1980"
                             v-model="activeVoucher"
                     />
 
@@ -68,7 +68,7 @@
             <b-field grouped position="is-right">
 
                 <b-input value="" placeholder="Other amount" type="number" maxlength="30"
-                         size="is-medium is-radiusless is-dark"></b-input>
+                         size="is-medium is-radiusless is-dark" expanded></b-input>
 
                 <!--<b-field label="Other amount">
                     <b-numberinput placeholder="Other amount" size="is-medium" step="50">
@@ -76,7 +76,7 @@
                 </b-field>-->
 
                 <p class="control">
-                    <b-button size="is-medium" type="is-primary" outlined class="is-radiusless">Proceed to Pay
+                    <b-button size="is-medium" type="is-primary" outlined class="is-radiusless">Pay
                     </b-button>
                 </p>
             </b-field>
@@ -88,34 +88,20 @@
     import VoucherCardRadioButton from "../../components/custom-recharge-form-controls/VoucherCardRadio";
     import BButton from "buefy/src/components/button/Button";
     import PhoneNumberInputBox from "../../components/AppWidgets/PhoneNumberInputBox";
+    import {mobile} from "./mixins"
 
     export default {
         name: "ServiceAirtime",
         components: {PhoneNumberInputBox, BButton, VoucherCardRadioButton},
+        mixins: [mobile],
         data() {
             return {
                 count: 1,
                 radioButton: '',
-                // beneficiaryPhoneNumber: '',
+                beneficiaryPhoneNumber: '',
+                activeCarrier: '',
                 activeVoucher: '',
             }
-        },
-        methods: {
-            updateActiveVoucher(voucher) {
-                this.activeVoucher = voucher
-            },
-            /*detectCarrier(phoneNumber) {
-                for (const key in nigerianCarrierNoPrefixes) {
-                    console.log(`${key}: ${nigerianCarrierNoPrefixes[key]} `, `${typeof nigerianCarrierNoPrefixes[key]}`);
-
-                    const carrierGroups = Object.values(nigerianCarrierNoPrefixes[key]);
-                    if ((carrierGroups.indexOf(phoneNumber.slice(0, 4)) > -1) || (carrierGroups.indexOf(phoneNumber.slice(0, 5)) > -1)) {
-                        console.log(`This network is  ${key}`);
-                        this.setActiveCarrier(key);
-                        return key
-                    }
-                }
-            },*/
         },
         mounted() {
             setTimeout(() => {

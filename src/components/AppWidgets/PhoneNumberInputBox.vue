@@ -179,10 +179,14 @@
         },
         watch: {
             // whenever question changes, this function will run
-            beneficiaryPhoneNumber: function (newPhoneNumber) {
-                // this.answer = 'Waiting for you to stop typing...'
-                if (newPhoneNumber.length >= 4) this.detectCarrier(newPhoneNumber);
+            beneficiaryPhoneNumber: function (newValue) {
+                this.$emit('getBeneficiaryPhoneNumber', this.beneficiaryPhoneNumber)
+                if (newValue.length >= 4) this.detectCarrier(newValue);
                 else return false;
+            },
+            // whenever question changes, this function will run
+            activeCarrier: function (newValue) {
+                this.$emit('getActiveCarrier', newValue);
             }
         },
 

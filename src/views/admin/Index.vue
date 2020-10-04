@@ -42,9 +42,9 @@
                 </div>
             </nav>
         </div>
-        <div class="hero-body">
+        <!--<div class="hero-body">
             <div class="container has-text-centered">
-                <div class="columns is-vcentered is-centered">
+                &lt;!&ndash;<div class="columns is-vcentered is-centered">
                     <div class="column is-5">
                         <figure class="image is-4by3">
                             <img src="http://placehold.it/800x600" alt="Description">
@@ -64,37 +64,17 @@
                             </a>
                         </p>
                     </div>
-                </div>
+                </div>&ndash;&gt;
             </div>
-        </div>
+        </div>-->
     </section>
-        <section class="container">
-            <nav class="level is-mobile">
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">Dashboard</p>
-                        <p class="title">3,456</p>
-                    </div>
-                </div>
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">Following</p>
-                        <p class="title">123</p>
-                    </div>
-                </div>
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">Followers</p>
-                        <p class="title">456K</p>
-                    </div>
-                </div>
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="heading">Settings</p>
-                        <p class="title">789</p>
-                    </div>
-                </div>
-            </nav>
+        <section class="container mt-6">
+            <admin-primary-nav>
+                <admin-primary-nav-item icon="home" label="dashboard" route-to="admin-dashboard"/>
+                <admin-primary-nav-item icon="list" label="Transactions"  route-to="admin-transactions"/>
+                <admin-primary-nav-item icon="trending-up" label="Analytics" route-to="admin-analytics"/>
+                <admin-primary-nav-item icon="settings" label="Settings" route-to="admin-settings"/>
+            </admin-primary-nav>
             <router-view ref="AppMainContent">
             </router-view>
         </section>
@@ -105,10 +85,14 @@
 
 <script>
     import AppFooter from "../../components/AppViewComponent/AppFooter";
+    import AdminPrimaryNav from "../../components/AppWidgets/AppAdminPrimaryNavigator/AdminPrimaryNav";
+    import AdminPrimaryNavItem from "../../components/AppWidgets/AppAdminPrimaryNavigator/AdminPrimaryNavItem";
 
     export default {
         name: 'ServiceIndex',
         components: {
+            AdminPrimaryNavItem,
+            AdminPrimaryNav,
             AppFooter
         },
         props: {

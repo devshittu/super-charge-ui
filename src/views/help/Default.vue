@@ -4,18 +4,11 @@
 
         <div class="columns">
             <div class="column">
-                <!--<h3>Single Active Item</h3>
-                <p>Only one accordion item's details will be displayed at a time.</p>-->
-
-                <!--<AppAccordion>
-                </AppAccordion>-->
 
 
                 <accordion id="accordion-example-1" :content="example1"></accordion>
             </div>
             <div class="column">
-                <!--<h3>Multiple Active Items</h3>
-                <p>Add the <code>multiple</code> attribute to allow more than one accordion item's details to be showing.</p>-->
                 <accordion id="accordion-example-2" :content="example2" multiple="multiple"></accordion>
             </div>
         </div>
@@ -83,12 +76,10 @@
         }
     ];
 
-    // import AppAccordion from "../../components/AppElements/AppAccordion/AppAccordion";
-    import Accordion from "../../components/AppElements/AppAccordion/Accordion";
+    import Accordion from "../../components/AppWidgets/AppAccordion/Accordion";
     export default {
         name: "Default.vue",
         components: {
-            // AppAccordion,
             Accordion
         },
         data() {

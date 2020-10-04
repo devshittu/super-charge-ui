@@ -12,9 +12,9 @@
                      :disabled="disabled"
                      @click="updateActiveVoucher"
                      @keydown.prevent.enter="$refs.label.click()">
-                <p class="title value is-size-4">{{ customerValue }}</p>
+                <p class="title value is-size-4-desktop is-size-5-mobile mb-1">{{ customerValue }}</p>
                 <p class="duration is-size-7"> {{ duration }}</p>
-                <p class="merchant-price is-size-6">Pay {{ 'N' + merchantPrice + '.00' }}</p>
+                <p class="merchant-price is-size-6-desktop is-size-7-mobile">Pay {{ 'N' + merchantPrice + '.00' }}</p>
             </article>
         </div>
 
@@ -37,8 +37,8 @@
             expanded: Boolean,
             rounded: Boolean,
             customerValue: {
-                type: Number,
-                default: 2000
+                type: String,
+                default: '2000'
             },
             duration: {
                 type: String, //in days
