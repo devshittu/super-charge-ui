@@ -10,7 +10,3 @@
         name: "AdminPrimaryNav"
     }
 </script>
-
-<style scoped>
-
-</style>

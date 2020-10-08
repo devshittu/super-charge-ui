@@ -71,9 +71,9 @@
         <section class="container mt-6">
             <admin-primary-nav>
                 <admin-primary-nav-item icon="home" label="dashboard" route-to="admin-dashboard"/>
-                <admin-primary-nav-item icon="list" label="Transactions"  route-to="admin-transactions"/>
-                <admin-primary-nav-item icon="trending-up" label="Analytics" route-to="admin-analytics"/>
-                <admin-primary-nav-item icon="settings" label="Settings" route-to="admin-settings"/>
+                <admin-primary-nav-item icon="list" label="transactions"  route-to="admin-transactions"/>
+                <admin-primary-nav-item icon="trending-up" label="analytics" route-to="admin-analytics"/>
+                <admin-primary-nav-item icon="settings" label="settings" route-to="admin-settings"/>
             </admin-primary-nav>
             <router-view ref="AppMainContent">
             </router-view>

@@ -39,7 +39,7 @@ export default {
             props: {
                 pageTitle: "Subcribe to your favorite tv",
             },
-            component: () => import("@/views/services/ServiceData"),
+            component: () => import("@/views/services/ServiceCableTV"),
         },
         {
             path: "power",
@@ -48,7 +48,7 @@ export default {
             props: {
                 pageTitle: "Settle Power Bills",
             },
-            component: () => import("@/views/services/ServiceData"),
+            component: () => import("@/views/services/ServicePower"),
         },
     ]
 };

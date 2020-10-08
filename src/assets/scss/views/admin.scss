@@ -1,0 +1,10 @@
+
+.admin-primary-nav-item {
+  a {
+    color: darken($primary-color, 20%);
+
+    &.is-active, &:hover {
+      color: lighten($primary-color, 10%)
+    }
+  }
+}

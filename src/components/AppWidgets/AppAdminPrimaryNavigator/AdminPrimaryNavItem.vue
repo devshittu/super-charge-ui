@@ -1,12 +1,12 @@
 <template>
 
-    <div class="level-item has-text-centered">
+    <div class="level-item admin-primary-nav-item has-text-centered">
 
-            <div>
+        <div>
 
-                <router-link
-                        :to="{ name: routeTo}"
-                        :class="[currentPage.includes(label) ? activeLinkClass: '', ]">
+            <router-link
+                    :to="{ name: routeTo}"
+                    :class="[currentPage.includes(label) ? activeLinkClass: '', ]">
                 <b-icon
                         :icon="processIcon"
                         pack="fi"
@@ -16,13 +16,14 @@
 
                 <p class="heading is-size-6-desktop is-size-7-touch has-text-weight-bold">{{ label | capitalize}}</p>
                 <!--<p class="title">3,456</p>-->
-                </router-link>
-            </div>
+            </router-link>
+        </div>
     </div>
 </template>
 
 <script>
     import {ActiveLinks} from '../../../mixins/link-mixins'
+
     export default {
         name: "AdminPrimaryNavItem",
         mixins: [ActiveLinks],

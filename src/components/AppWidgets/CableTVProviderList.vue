@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="columns  is-centered ">
+        <!--<div class="columns  is-centered ">
             <div class="column is-8">
                 <b-field grouped position="is-centered">
 
@@ -12,30 +12,33 @@
 
         </div>
         <hr class="hr" v-if="horizontalRule"/>
-
+-->
         <div class="container">
 
             <nav class="level is-mobile">
-                <!--<section>-->
-                <!--<b-field grouped group-multiline position="is-centered is-mobile">-->
                 <carrier-card-radio-button
-                        carrier-logo-source="https://nigerialogos.com/logos/9mobile/9mobile.png"
-                        carrier-name="9mobile"
+                        carrier-logo-source="https://startimestv.com/Uploads/Picture/2016/08/23/s57bc2bb73663d.png"
+                        carrier-name="Startimes"
                         v-model="activeCarrier"
-                />
+                /><!--
                 <carrier-card-radio-button
-                        carrier-logo-source="https://nigerialogos.com/logos/airtel/airtel.png"
+                        carrier-logo-source="https://logodix.com/logo/1663708.png"
+                        carrier-name="Startimes"
+                        v-model="activeCarrier"
+                />-->
+                <!--<carrier-card-radio-button
+                        carrier-logo-source="/assets/logo.png"
                         carrier-name="Airtel"
                         v-model="activeCarrier"
-                />
+                />-->
                 <carrier-card-radio-button
-                        carrier-logo-source="https://nigerialogos.com/logos/glo/glo.png"
-                        carrier-name="Glo"
+                        carrier-logo-source="https://www.multichoice.com/media/1170/gotv_full-colour.png"
+                        carrier-name="GOtv"
                         v-model="activeCarrier"
                 />
                 <carrier-card-radio-button
-                        carrier-logo-source="https://nigerialogos.com/logos/mtn/mtn.png"
-                        carrier-name="MTN"
+                        carrier-logo-source="https://www.multichoice.com/media/1171/kisspng-dstv-multichoice-television-channel-supersport-high-end-decadent-strokes-5aee29bfb154805670399115255576957264.png"
+                        carrier-name="DStv"
                         v-model="activeCarrier"
                 />
             </nav>
@@ -60,7 +63,7 @@
     }
 
     export default {
-        name: 'PhoneNumberInputBox',
+        name: 'CableTVProviderList',
         components: {CarrierCardRadioButton},
         props: {
             // beneficiaryPhoneNumber: {},

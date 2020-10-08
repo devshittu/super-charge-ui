@@ -2,6 +2,7 @@
 @import "./variables";
 @import "./font-presets";
 @import "../widgets/feathericons/fi-style";
+@import "views/admin";
 
 body {
   @include app-font-face('text');
