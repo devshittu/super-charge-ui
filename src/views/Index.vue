@@ -105,7 +105,7 @@
                                     {{'FAQ' | capitalize}}
                                 </router-link>
                                 <router-link
-                                        :to="{ name: 'help'}" :class="[currentPage.includes('contact') ? activeLinkClass: '', 'navbar-item']">
+                                        :to="{ name: 'contact-us'}" :class="[currentPage.includes('contact') ? activeLinkClass: '', 'navbar-item']">
                                     {{'Contact Us' | capitalize}}
                                 </router-link>
                                 <router-link

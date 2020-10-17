@@ -1,5 +1,10 @@
 $primary: #3c8195 !default;
 $primary-color: $primary;
 $secondary-color: orange;
+$tabs-link-active-color: $primary;
+$tabs-toggle-link-active-background-color: lighten($primary, 10%);
+$tabs-toggle-link-active-border-color: lighten($primary, 5%);
+
+$switch-active-background-color: $primary;
 
 @import "~bulma/bulma";

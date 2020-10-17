@@ -1,7 +1,7 @@
 <template>
     <div class="">
 
-        <PhoneNumberInputBox @getBeneficiaryPhoneNumber="updateBeneficiaryPhoneNumber" @getActiveCarrier="updateActiveCarrier" />
+        <DiscoProviderList @getBeneficiaryPhoneNumber="updateBeneficiaryPhoneNumber" @getActiveCarrier="updateActiveCarrier" />
         <div class="container">
 
             <section>
@@ -67,8 +67,11 @@
 
             <b-field grouped position="is-right">
 
-                <b-input value="" placeholder="Other amount" type="number" maxlength="30"
+                <b-input value="" placeholder="Meter Number" type="number" maxlength="30"
                          size="is-medium is-radiusless is-dark" expanded></b-input>
+<!--
+                <b-input value="" placeholder="Unit" type="number" maxlength="30"
+                         size="is-medium is-radiusless is-dark" expanded></b-input>-->
 
                 <!--<b-field label="Other amount">
                     <b-numberinput placeholder="Other amount" size="is-medium" step="50">
@@ -87,12 +90,12 @@
 <script>
     import VoucherCardRadioButton from "../../components/custom-recharge-form-controls/VoucherCardRadio";
     import BButton from "buefy/src/components/button/Button";
-    import PhoneNumberInputBox from "../../components/AppWidgets/PhoneNumberInputBox";
     import {mobile} from "./mixins"
+    import DiscoProviderList from "../../components/AppWidgets/DiscoProviderList";
 
     export default {
         name: "ServiceAirtime",
-        components: {PhoneNumberInputBox, BButton, VoucherCardRadioButton},
+        components: {DiscoProviderList, BButton, VoucherCardRadioButton},
         mixins: [mobile],
         data() {
             return {

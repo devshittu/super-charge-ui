@@ -5,6 +5,7 @@ import HomeRoutes from "./home.route";
 import HelpRoutes from "./help.route";
 import AdminRoutes from "./admin.route";
 import AuthRoutes from "./auth.route";
+import BBRoutes from "./bb.route";
 
 Vue.use(Router);
 
@@ -17,6 +18,7 @@ let router = new Router({
         HelpRoutes,
         AdminRoutes,
         AuthRoutes,
+        BBRoutes,
     ]
 })
 

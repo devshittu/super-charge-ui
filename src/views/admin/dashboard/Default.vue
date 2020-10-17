@@ -8,7 +8,7 @@
         </div>
         <div class="block">
             <b-switch v-model="multiline">Multiline</b-switch>
-        </div>-->
+        </div>--><!--
         <b-tabs v-model="activeTab" :multiline="multiline">
             <template v-for="tab in tabs">
                 <b-tab-item
@@ -16,15 +16,15 @@
                         :key="tab.id"
                         :value="tab.id"
                         :label="tab.label">
-                    {{ tab.content }}
+                    {{ tab.content }}-->
                     <div class="block">
                         <settings/>
                     </div>
 
-
+<!--
                 </b-tab-item>
             </template>
-        </b-tabs>
+        </b-tabs>-->
     </section>
 </template>
 

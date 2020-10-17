@@ -11,43 +11,37 @@
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="50"
-                            customer-value="500mb" duration="7 days" :merchant-price="48"
+                            customer-value="Premium" duration="175 Channels" :merchant-price="18400"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="100"
-                            customer-value="1.5gb" duration="7 days" :merchant-price="97"
+                            customer-value="Compact Plus" duration="155 Channels" :merchant-price="12400"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="200"
-                            customer-value="2gb" duration="7 days" :merchant-price="194"
+                            customer-value="Compact" duration="135 Channels" :merchant-price="7900"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="400"
-                            customer-value="3gb" duration="1 month" :merchant-price="390"
+                            customer-value="Confam" duration="95+ Channels" :merchant-price="4615"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="500"
-                            customer-value="4.5gb" duration="1 month" :merchant-price="485"
+                            customer-value="Yanga" duration="95 Channels" :merchant-price="2565"
                             v-model="activeVoucher"
                     />
                     <voucher-card-radio-button
                             name="voucherType"
                             native-value="1000"
-                            customer-value="6gb" duration="1 month" :merchant-price="980"
-                            v-model="activeVoucher"
-                    />
-                    <voucher-card-radio-button
-                            name="voucherType"
-                            native-value="2000"
-                            customer-value="10gb" duration="1 month" :merchant-price="1980"
+                            customer-value="Confam" duration="40 Channels" :merchant-price="1850"
                             v-model="activeVoucher"
                     />
 
@@ -69,7 +63,7 @@
 
             <b-field grouped position="is-right">
 
-                <b-input value="" placeholder="Other amount" type="number" maxlength="30"
+                <b-input value="" placeholder="Decoder Number" type="number" maxlength="30"
                          size="is-medium is-radiusless is-dark" expanded></b-input>
 
                 <!--<b-field label="Other amount">

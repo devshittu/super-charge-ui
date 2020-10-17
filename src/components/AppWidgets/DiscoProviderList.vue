@@ -17,30 +17,55 @@
 
             <nav class="level is-mobile">
                 <carrier-card-radio-button
-                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/startimes.png"
-                        carrier-name="Startimes"
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/aedc.png"
+                        carrier-name="AEDC"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/eedc.png"
+                        carrier-name="EEDC"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/ekedc.png"
+                        carrier-name="EKEDC"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/ibedc.png"
+                        carrier-name="IBEDC"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/ikeja.png"
+                        carrier-name="IKEJA"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/jedc.png"
+                        carrier-name="JEDC"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/kaduna.png"
+                        carrier-name="KADUNA"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/kedco.png"
+                        carrier-name="KEDCO"
+                        v-model="activeCarrier"
+                />
+                <carrier-card-radio-button
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/phedc.png"
+                        carrier-name="PHEDC"
                         v-model="activeCarrier"
                 /><!--
                 <carrier-card-radio-button
-                        carrier-logo-source="https://logodix.com/logo/1663708.png"
-                        carrier-name="Startimes"
+                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/.png"
+                        carrier-name=""
                         v-model="activeCarrier"
                 />-->
-                <!--<carrier-card-radio-button
-                        carrier-logo-source="/assets/logo.png"
-                        carrier-name="Airtel"
-                        v-model="activeCarrier"
-                />-->
-                <carrier-card-radio-button
-                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/GOtv.png"
-                        carrier-name="GOtv"
-                        v-model="activeCarrier"
-                />
-                <carrier-card-radio-button
-                        carrier-logo-source="https://acephap.buk.edu.ng/supachaj/1x/DStv.png"
-                        carrier-name="DStv"
-                        v-model="activeCarrier"
-                />
             </nav>
             <hr class="hr" v-if="horizontalRule"/>
         </div>
@@ -63,7 +88,7 @@
     }
 
     export default {
-        name: 'CableTVProviderList',
+        name: 'DiscoProviderList',
         components: {CarrierCardRadioButton},
         props: {
             // beneficiaryPhoneNumber: {},

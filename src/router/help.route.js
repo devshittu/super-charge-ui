@@ -13,5 +13,11 @@ export default {
             // alias: "/",
             component: () => import("@/views/help/Default"),
         },
+        {
+            path: "contactus",
+            name: "contact-us",
+            alias: "/contact",
+            component: () => import("@/views/help/ContactUs"),
+        },
     ]
 };
