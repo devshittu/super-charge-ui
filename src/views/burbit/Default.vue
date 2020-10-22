@@ -1,8 +1,8 @@
 <template>
-    <section class="container has-text-centeredo">
-        <div class="columns is-vcentered is-centered">
-            <div class="column is-3 is-hidden-touch">
-                <figure class="image is-4by3 pt-0">
+    <section class="container ">
+        <div class="columns is-vcentered-now-disabled is-centered">
+            <div class="column is-2 is-3-desktop is-hidden-touch pt-6">
+                <figure class="image is-4by3 pt-6">
                     <!--<img src="http://placehold.it/800x600" alt="Description">-->
                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.38 32">
 
@@ -36,59 +36,59 @@
                         <path d="M19.37,30.84l-.7-1h.53l.39.6.39-.6h.53l-.7,1v.9h-.44Z"/>
                     </svg>
                 </figure>
-                <table>
-                    <tr>
-                        <td>
+                <div class="block px-3 py-5  has-text-black is-size-6">
+                    <h3 class="is-size-4 has-text-weight-bold pb-1">Contact</h3>
+                    <p>
 
-                            <b-icon
-                                    icon="fi-twitter"
-                                    size="is-large is-size-4"
-                                    pack="fi"
-                            >
-                            </b-icon>
-                            <b-icon
-                                    icon="fi-send"
-                                    size="is-large is-size-4"
-                                    pack="fi"
-                            >
-                            </b-icon>
+                        <b-icon
+                                icon="fi-twitter"
+                                size="is-medium is-size-5"
+                                pack="fi"
+                        >
+                        </b-icon>
 
-                            <span class="is-large is-size-4">burbitng</span>
-                        </td>
-                        <td>Description</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b-icon
-                                    icon="fi-phone"
-                                    size="is-large is-size-4"
-                                    pack="fi"
-                            >
-                            </b-icon>
+                        <span class=""><a href="https://twitter.com/@burbitng" target="_blank">burbitng</a></span>
+                    </p>
+                    <p>
 
-                            <span class="is-large is-size-4"><a href="tel:+2347031207156">07031207156</a></span>
-                        </td>
-                        <td>Description</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b-icon
-                                    icon="fi-at-sign"
-                                    size="is-large is-size-4"
-                                    pack="fi"
-                            >
-                            </b-icon>
+                        <b-icon
+                                icon="fi-phone"
+                                size="is-medium is-size-5"
+                                pack="fi"
+                        >
+                        </b-icon>
 
-                            <span class="is-large is-size-4"><a href="mailto:devshittu@gmail.com">burbitng@gmail.com</a></span>
-                        </td>
-                        <td>Description</td>
-                    </tr>
-                </table>
+                        <span class="mb-6"><a href="tel:+2348088288435">0808-828-8435</a></span>
+                    </p>
+                    <p>
+
+                        <b-icon
+                                icon="fi-at-sign"
+                                size="is-medium is-size-5"
+                                pack="fi"
+                        >
+                        </b-icon>
+
+                        <span class="is-medium"><a href="mailto:devshittu@gmail.com">enquiries@burbit.ng</a></span>
+                    </p>
+                </div>
             </div>
-            <div class="column is-offset-1-desktop">
-                <h1 class="title is-2">
-                    Superhero Scaffolding
-                </h1>
+            <div class="column is-offset-1-desktop bb-tabbed-page">
+
+                <b-tabs v-model="activeTab" position="is-right" size="is-medium">
+                    <b-tab-item label="Services">
+                        <BBService/>
+
+                    </b-tab-item>
+                    <!--<b-tab-item label="Team" disabled>
+                        Our Services
+                    </b-tab-item>-->
+                    <b-tab-item label="Featured Works">
+                        <BBWork/>
+                    </b-tab-item>
+                </b-tabs>
+
+                <!--
                 <h2 class="subtitle is-4">
                     Let this cover page describe a product or service.
                 </h2>
@@ -97,37 +97,22 @@
                     <a class="button is-medium is-primary is-outlined">
                         Learn more
                     </a>
-                </p>
+                </p>-->
             </div>
         </div>
-        <!--<div class="tile is-ancestor">
-            <div class="tile is-4 is-vertical is-parent">
-                <div class="tile is-child box">
-                    <p class="title">One</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                </div>
-                <div class="tile is-child box">
-                    &lt;!&ndash;<p class="title">Two</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>&ndash;&gt;
-                </div>
-            </div>
-            <div class="tile is-parent">
-                <div class="tile is-child box">
-                    <p class="title">Three</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-                    <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                    <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
-                </div>
-            </div>
-        </div>-->
+
     </section>
 </template>
 
 <script>
 
+    import BTabs from "buefy/src/components/tabs/Tabs";
+    import BBService from "./BBService";
+    import BBWork from "./BBWork";
+
     export default {
         name: 'ServiceIndex',
-        components: {},
+        components: {BBWork, BBService, BTabs},
         props: {
             msg: String,
             pageTitle: String,
@@ -138,6 +123,7 @@
                 isNavBarFixed: false,
                 menuActive: false,
                 activeLinkClass: 'is-active',
+                // activeTab: 'Services',
             }
         },
         created() {
@@ -159,6 +145,15 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
+    @import "../../assets/scss/main";
+.bb-tabbed-page{
+    nav.tabs ul li{
+
+        a, a > * {
+            @include app-font-face('header');
+        }
+    }
+}
 
 </style>

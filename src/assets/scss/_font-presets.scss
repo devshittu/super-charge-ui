@@ -2,6 +2,7 @@
 $header: 'futura-pt', Poppins, sans-serif;
 $link: 'Karla', Montserrat, sans-serif;
 $text: 'Karla', sans-serif;
+$text-mono: 'Roboto Mono', monospace;
 
 $app-font-settings: (
         'header': (
@@ -12,6 +13,9 @@ $app-font-settings: (
         ),
         'text': (
                 font-family: $text,
+        ),
+        'text-mono': (
+                font-family: $text-mono,
         ),
 );
 

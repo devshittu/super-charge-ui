@@ -38,8 +38,8 @@
                                 <router-link
                                         is="div"
                                         :to="{ name: 'signin'}" :class="[currentPage.includes('signin') ? activeLinkClass: '', 'navbar-item', '']">
-                                    <b-button tag="a" class="button is-primary is-large is-outlined is-radiusless">
-                                    {{'Get a Quote' | capitalize}}
+                                    <b-button tag="a" class="button is-primary is-large is-outlined is-radiusless" @click="isCardModalActive = true">
+                                    {{'Start A Project' | capitalize}}
                                     </b-button>
                                 </router-link>
                         </div>
@@ -53,6 +53,10 @@
                 </router-view>
         </div>
 
+
+        <!--<StartAProjectModal :is-card-modal-active="isCardModalActive" v-on:update:isCardModalActive="isCardModalActive = $event"/>-->
+        <StartAProjectModal :is-card-modal-active.sync="isCardModalActive" />
+
     </section>
         <AppFooter/>
 
@@ -63,10 +67,12 @@
     import AppFooter from "../../components/AppViewComponent/AppFooter";
     import BButton from "buefy/src/components/button/Button";
     import BIcon from "buefy/src/components/icon/Icon";
+    import StartAProjectModal from "./StartAProjectModal";
 
     export default {
         name: 'ServiceIndex',
         components: {
+            StartAProjectModal,
             BIcon,
             BButton,
             AppFooter
@@ -80,6 +86,7 @@
                 //msg:'Welcome',
                 isNavBarFixed: false,
                 menuActive:false,
+                isCardModalActive:false,
                 activeLinkClass: 'is-active',
             }
         },
@@ -102,10 +109,15 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../../assets/scss/variables";
+@import "../../assets/scss/main";
     .logo-brand {
         color: $white;
         background: darken($primary-color, 20%);
         padding: 14px 10px 5px 10px;
         margin-top: -.5rem;
+    }
+    *{
+
+        @include app-font-face('text-mono');
     }
 </style>
